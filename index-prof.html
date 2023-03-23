@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Gamer Tarde</title>
+    <link rel="stylesheet" href="./css/styles-prof.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-top">
+            <div class="layout-grid alinhamento-between-center">
+
+                <div class="contatos">
+                    <a class="phone">
+                        <img src="assets/icons/icone_telefone.svg" alt="Ícone do telefone de contato">
+                        <p>(11) 0900-1010</p>
+                    </a>
+                    <a class="mail">
+                        <img src="assets/icons/icone_email.svg" alt="Ícone de email de contato">
+                        <p>contato@gamer.com.br</p>
+                    </a>
+                </div>
+
+                <div class="midias-sociais">
+                    <a href="">
+                        <img src="assets/icons/Face.svg" alt="Imagem link do facebook da empresa">
+                    </a>
+                    <a href="">
+                        <img src="assets/icons/LinkedIn.svg" alt="Imagem link do Linkedin da empresa">
+                    </a>
+                    <a href="">
+                        <img src="assets/icons/Insta.svg" alt="Imagem link do instagram da empresa">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="header-bottom">
+            <div class="layout-grid alinhamento-between-center">
+                <!-- Menu Hamburger. Visível apenas no smartphone -->
+                <img class="menu-hamburguer" onclick="mostrarMenu()" src="assets/icons/Menu burguer real.svg"
+                    alt="Ícone de Telefone. Abre e fecha o menu principal, no celular">
+
+                <img class="logo" src="assets/images/logotipo-gamer.png"
+                    alt="Imagem logotipo gamer com um controle de vídeo game ao centro">
+
+                <nav class="menu" id="menu">
+                    <a href="">Início</a>
+                    <a href="">Jogadores</a>
+                    <a href="">Equipes</a>
+                    <a href="">Notícias</a>
+
+                    <!-- vísível apenas no mobile -->
+                    <a class="phone">
+                        <img src="assets/icons/icone_telefone.svg" alt="Ícone do telefone de contato">
+                        <p>(11) 0900-1010</p>
+                    </a>
+                    <a class="mail">
+                        <img src="assets/icons/icone_email.svg" alt="Ícone de email de contato">
+                        <p>contato@gamer.com.br</p>
+                    </a>
+
+
+                    <div class="midias-sociais">
+                        <a href="">
+                            <img src="assets/icons/Face.svg" alt="Imagem link do facebook da empresa">
+                        </a>
+                        <a href="">
+                            <img src="assets/icons/LinkedIn.svg" alt="Imagem link do Linkedin da empresa">
+                        </a>
+                        <a href="">
+                            <img src="assets/icons/Insta.svg" alt="Imagem link do instagram da empresa">
+                        </a>
+                    </div>
+                </nav>
+
+                <!-- menu 3 pontinhos -->
+                <img class="menu-pontinhos" onclick="menuUser()" src="assets/icons/pointers.svg"
+                    alt="Ícone 3 pontinhos, abre e fecha o menu de usuários">
+
+                <div class="menu-usuarios" id="menu-user">
+                    <a href="">
+                        <img src="assets/icons/user.svg" alt="Ícone de perfil">
+                    </a>
+                    <a href="">
+                        <img src="assets/icons/bag.svg" alt="Ícone de sacola">
+                    </a>
+                    <a href="">
+                        <img src="assets/icons/search.svg" alt="Ícone lupa de pesquisa">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <article class="banner">
+            <h1>Liga Gamers</h1>
+            <a href="" class="btn-sobre">Sobre</a>
+        </article>
+
+        <section class="jogos">
+            <div class="layout-grid jogos-flex">
+                <img src="assets/images/fifa.png" alt="imagem fifa 23">
+                <img src="assets/images/cs.png" alt="csgo">
+            </div>
+        </section>
+
+
+        <section class="progamer">
+            <div class="layout-grid progamer-flex">
+                <div class="titulo">
+                    <h2>Entre para o time progamer</h2>
+                    <hr class="linha">
+                </div>
+
+                <article class="vava">
+                    <div class="jogos-diferentes">
+                        <img class="controle" src="assets/icons/controle.png" alt="icone de controle game">
+                        <h2>20 JOGOS DIFERENTES</h2>
+                        <p>São mais de 20 jogos em 2 plataformas dispóniveis para que você possa aprender melhores
+                            técnicas.</p>
+                    </div>
+                    <img class="killjoy" src="assets/images/killjoy.png" alt="imagem da killjoy">
+                </article>
+
+                <article class="lol">
+                    <div class="professores">
+                        <img class="gamer" src="assets/icons/perfil e controle.png"
+                            alt="icone de controle game e perfil">
+                        <h2>53 PROFESSORES</h2>
+                        <p>Temos 53 Proplayers no nosso time para ensinar todas as estratégias, você vai aprender do
+                            básico ao avançado. <br>
+                            Tempo de treinamento, descanso, equipamentos. </p>
+                    </div>
+                    <img class="jinx" src="assets/images/jinx.png" alt="imagem da jinx">
+                </article>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer></footer>
+
+    <script>
+
+        function mostrarMenu() {
+            // pega a navbar pelo id
+            document.getElementById("menu").classList.toggle("mostrar-menu");
+        }
+
+        function menuUser() {
+            // pega a navbar pelo id
+            document.getElementById("menu-user").classList.toggle("mostrar-user");
+        }
+
+    </script>
+</body>
+
+</html>
