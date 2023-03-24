@@ -304,68 +304,7 @@ main .banner a {
 
 /* FOOTER */
 
-footer {
-    background-image: url(../assets/images/backgroung_footer.png);
-    height: 1531px;
-}
 
-footer .logo {
-    width: 110px;
-    height: 32px;
-    margin-top: 51px;
-    margin-left: 115px;
-}
-
-footer p {
-    margin-top: 41px;
-}
-
-footer .midias {
-    margin-top: 41px;
-    display: flex;
-    justify-content: space-around;
-}
-
-footer h2 {
-    margin-top: 120px;
-    font-family: Titi;
-    font-size: 30px;
-    text-transform: capitalize;
-}
-
-footer .trave {
-    width: 112px;
-    border: 1px solid #F9AA01;
-}
-
-footer .link-line1 {
-    border: 1px solid red;
-    display: flex;
-}
-
-footer .contatos {
-    display: flex;
-    flex-direction: column;
-}
-
-footer .contatos h2 {
-    border-bottom: 3px solid #F9AA01;
-    width: 112px;
-}
-
-footer .contatos h3 {
-    color: #F9AA01;
-}
-
-footer .contatos .local {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-}
-
-footer .contatos p {
-
-}
 
 /* SEÇÃO JOGOS */
 

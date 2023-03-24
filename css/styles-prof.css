@@ -157,12 +157,10 @@ main .banner {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    /* background-color: 1px solid red; */
     padding-top: 60px;
     height: 606px;
     padding-bottom: 40px;
     background-image: url(../assets/images/fundo\ liga\ gamer\ mobile.png);
-    /* contain é para altura e cover para a largura */
     background-size: cover;
     background-position: bottom;
     background-repeat: no-repeat;
@@ -175,7 +173,6 @@ main .banner h1 {
 }
 
 main .banner a {
-    /* border: 1px solid red; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -237,6 +234,8 @@ main .progamer .jogos-diferentes {
     left: 215px;
     background-image: linear-gradient(to right bottom, rgba(122, 49, 236, 0.2), rgba(47, 7, 109, 0.83));
     backdrop-filter: blur(15px);
+    border-radius: 8px;
+    border: 2px solid transparent;
 }
 
 main .progamer .jogos-diferentes .killjoy {
@@ -267,7 +266,7 @@ main .progamer article .jogos-diferentes p {
     font-family: Quick;
     font-size: 16px;
     text-align: justify;
-}
+}      
 
 main .progamer .professores {
     position: absolute;
@@ -275,6 +274,11 @@ main .progamer .professores {
     left: 0;
     background-image: linear-gradient(to right bottom, rgba(122, 49, 236, 0.2), rgba(47, 7, 109, 0.83));
     backdrop-filter: blur(15px);
+    border-radius: 8px ; 
+    border: 2px solid transparent;
+    background:
+    linear-gradient( to right bottom, rgba(255, 255, 255, 1), rgba(27, 20, 38, 0.10) ) content-box, 
+    linear-gradient( to right bottom, rgba(255, 255, 255, 1), rgba(27, 20, 38, 0.10) ) border-box;
 }
 
 main .progamer article .professores .gamer {
@@ -572,4 +576,67 @@ main .progamer .titulo {
         text-align: justify;
     }
 
-}
+    /* NOTÍCIAS */
+
+    main .noticias {
+    height: 1175px;
+    background-image: url(../assets/images/retangulo_blur_notícia.png);
+    }
+
+    main .noticias-flex {
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+    }
+
+    main .noticias h2 {
+        padding-top: 90px;
+        font-family: Titi;
+        font-size: 40px;
+    }
+
+    main .noticias hr {
+        width: 204px;
+        border: 2px solid #F9AA01;
+        margin-top: 32px;
+    }
+
+    main .noticias .cards {
+        display: flex;
+        flex-wrap: wrap;
+        row-gap: 62px;
+        column-gap: 20px;
+        
+    }
+
+    main .noticias .cards .card1 {
+        margin-top: 62px;
+        width: 285px;
+        height: 387px;
+        display: flex;
+        flex-direction: column;
+        background-image: linear-gradient(to right bottom, rgba(37, 26, 52, 0.34), rgba(5, 1, 12, 0.79));
+        backdrop-filter: blur(6px);
+        border-radius: 8px;
+    }
+
+    main .noticias .cards .card1 h3 {
+        font-family: Titib;
+        font-size: 24px;
+        margin-left: 22px;
+        margin-top: 16px;
+    }
+
+    main .noticias .cards .card1 p {
+        font-family: Quick;
+        font-size: 16px;
+        margin-left: 22px;
+        margin-right: 22px;
+        margin-top: 16px;
+        text-align: justify;
+    }
+
+    /* FOOTER */
+    
+    
+}   
